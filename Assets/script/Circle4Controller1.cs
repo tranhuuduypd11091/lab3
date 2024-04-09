@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Circle1Controller : MonoBehaviour
+public class Circle4Controller1 : MonoBehaviour
 {
     private int direction = 1;
     private float moveSpeed = 3;
@@ -17,7 +17,7 @@ public class Circle1Controller : MonoBehaviour
     {
         Vector3 movement = new Vector3(0f,direction,0f);
         transform.Translate(movement* moveSpeed*Time.deltaTime);
-        if(transform.position.y>1.7f|| transform.position.y<-1.53f)
+        if(transform.position.x>-9.5f|| transform.position.x<-7.5f)
         {
             direction *=-1;
         }
